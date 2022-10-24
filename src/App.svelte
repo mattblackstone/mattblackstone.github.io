@@ -31,7 +31,7 @@
         <img src="/images/logo-strava-128x128.png" alt="Strava logo" width="64" height="64" class="logo">
         <div>
           <div class="inline-all">
-            <h4>Strava:&nbsp;</h4>
+            <h4>Strava:</h4>
             <h5>Year In Sport</h5>
           </div>
           <p>An interactive data visualization experience for athletes who use Strava to track their workouts. Strava's
@@ -113,8 +113,13 @@
     <div id="experience">
       <h3>Experience</h3>
       <article>
+        <h4>RED Digital Cinema</h4>
+        <h5>Senior Frontend Developer (2022 &ndash; present)</h5>
+        <p>Build interactive marketing experiences that showcase the industry leading digital video capabilities of RED cameras. Maintain and improve RED's large ecommerce website. Refactor legacy code to improve performance and usability by leveraging front-end frameworks like Alpine and Svelte.</p>
+      </article>
+      <article>
         <h4>Spectrum</h4>
-        <h5>Senior Frontend Developer (2021 &ndash; present)</h5>
+        <h5>Senior Frontend Developer (2021 &ndash; 2022)</h5>
         <p>Build Vue.js + Vuex front-end for data-driven WebGL-based 3D product customization. Each unique front-end UI
           for clients like Specialized, Levi's, Gerber and Chewy ties the 3D product and backend data together to give
           the user a truly immersive experience to visualize their customized product from any angle before it's sent to
@@ -151,7 +156,7 @@
         <li>Vue</li>
         <li>React</li>
         <li>Next.js</li>
-        <li>GAS</li>
+        <li>Alpine</li>
         <li>Bash</li>
         <li>SQL</li>
       </ul>
