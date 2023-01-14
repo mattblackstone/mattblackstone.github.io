@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Total Time A</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <div id="content_a" class="container">
+      <div class="cell secondary"></div>
+      <div class="cell primary">
+        <div id="visual_a">
+          <svg id="stopwatch" width="308" height="346" viewBox="0 0 308 346" xmlns="http://www.w3.org/2000/svg">
+            <style type="text/css">
+              .st0 {
+                fill: #FFFFFF;
+              }
+
+              .st1 {
+                fill: none;
+                stroke: #DFDFE8;
+                stroke-width: 6;
+                stroke-dasharray: 2, 26;
+              }
+
+              .st2 {
+                fill: none;
+                stroke: #DFDFE8;
+                stroke-width: 8;
+              }
+
+              .st3 {
+                fill: none;
+                stroke: #FC5200;
+                stroke-width: 8;
+                stroke-dasharray: 754, 754;
+                stroke-dashoffset: 754;
+                transform-origin: 154px 192px;
+                transform: rotate(-90deg);
+              }
+            </style>
+            <rect id="top_btn" x="120.9" class="st0" width="66.2" height="34.3" />
+            <rect x="53.7" y="48" transform="matrix(0.8001 -0.5998 0.5998 0.8001 -22.8183 52.2661)" class="st0" width="26.6" height="24.7" />
+            <rect x="228.7" y="47.1" transform="matrix(0.5998 -0.8001 0.8001 0.5998 48.1279 216.9754)" class="st0" width="24.7" height="26.6" />
+            <rect x="135.2" y="34.3" class="st0" width="37.6" height="27" />
+            <circle class="st0" cx="154" cy="192" r="154" />
+            <circle class="st1" cx="154" cy="192" r="138" />
+            <circle class="st2" cx="154" cy="192" r="120" />
+            <circle id="time_ring" class="st3" cx="154" cy="192" r="120" />
+          </svg>
+          <div id="total_time">
+            <div id="time_text"></div>
+            <div id="time_units"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cell secondary">
+        <div id="title_a"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+
+</html>

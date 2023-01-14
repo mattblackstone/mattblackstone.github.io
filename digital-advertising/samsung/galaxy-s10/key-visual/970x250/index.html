@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="ad.size" content="width=970,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+			var clickTag = "http://samsung.com/";
+		</script>
+    <div id="backup" onclick="window.open(window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="devices">
+        <div class="phone gpu">
+          <div id="s10p" class="gpu sprite-png screen-s10p">
+            <div id="s10p_screen">
+              <div id="s10p_logo" class="sprite-png logo-s10"></div>
+            </div>
+            <div class="sprite-png edges-s10p"></div>
+            <div class="sprite-png device-s10p"></div>
+            <div class="sprite-png reflect-s10p"></div>
+          </div>
+        </div>
+        <div class="phone gpu">
+          <div id="s10" class="gpu sprite-png screen-s10">
+            <div id="s10_screen">
+              <div id="s10_logo" class="sprite-png logo-s10"></div>
+            </div>
+            <div class="sprite-png edges-s10"></div>
+            <div class="sprite-png device-s10"></div>
+            <div class="sprite-png reflect-s10"></div>
+          </div>
+        </div>
+        <div class="phone gpu">
+          <div id="s10e" class="gpu sprite-png screen-s10e">
+            <div id="s10e_screen">
+              <div id="s10e_logo" class="sprite-png logo-s10"></div>
+            </div>
+            <div class="sprite-png edges-s10e"></div>
+            <div class="sprite-png device-s10e"></div>
+            <div class="sprite-png reflect-s10e"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="headline">The new Galaxy S10</div>
+      <div id="cta">
+        <div id="cta_up" class="sprite-png cta-up"></div>
+        <div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+      </div>
+      <div id="logos" class="sprite-svg logos"></div>
+      <div id="branding" class="sprite-png branding"></div>
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <script>
+      var clickTag = "http://samsung.com";
+    </script>
+    <div id="ad_content" class="invisible">
+      <div id="first_frame" class="full-bleed alpha-0">
+        <canvas id="ai_canvas" class="alpha-0"></canvas>
+        <div id="device_holder" class="alpha-0">
+          <div id="splash_holder" class="splash-start">
+            <canvas id="splash_canvas"></canvas>
+          </div>
+          <img id="device_shadow" src="device-shadow.png" class="device-start"/>
+          <img id="device" src="device.png" class="device-start"/>
+        </div>
+        <div id="legal1" class="sprite legal1"></div>
+      </div>
+      <div id="third_frame" class="full-bleed alpha-0">
+        <div class="copy-area2">
+          <div id="galaxy_logo_large" class="sprite galaxy-logo-large"></div>
+          <div id="typed2-strings" class="invisible">
+            <p>with <br>water <br>resistance</p>
+          </div>
+          <span id="typed2" class="text-white" style="white-space:pre;"></span>
+        </div>
+      </div>
+      <div id="end_frame" class="full-bleed alpha-0">
+        <div id="galaxy_logo_small" class="sprite galaxy-logo-small alpha-0"></div>
+        <img id="phone_end" class="phone-end-start ease-out-expo" src="phone-end.jpg">
+        <div id="cta" class="alpha-0">
+          <div id="cta_up" class="sprite cta-up"></div>
+          <div id="cta_over" class="sprite cta-over alpha-0"></div>
+        </div>
+      </div>
+      <div id="branding_white" class="sprite branding"></div>
+      <div id="fallback" class="full-bleed"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

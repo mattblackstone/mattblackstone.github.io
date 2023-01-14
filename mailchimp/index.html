@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Matt Blackstone featuring examples of front-end web development built using Javascript, HTML5 and CSS.">
+  <meta name="author" content="mattblackstone">
+  <title>Mailchimp</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preload" as="style" href="../css/font.css">
+  <link rel="stylesheet" href="../css/font.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="../css/font.css">
+  </noscript>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Mailchimp</h1>
+        <h2>Standard Dynamic</h2>
+      </div>
+    </header>
+    <section>
+      <article>
+        <img src="images/mailchimp-masthead.png">
+      </article>
+    </section>
+    <section>
+      <div>
+        <h3>Overview</h3>
+        <article class="row">
+          <div>
+            <h4>The Problem</h4>
+            <p>Programmatic ad campaigns use complex audience targeting, but are not as effective without highly relevant content. Relevant content can require hundred or even thousands of variations. Usually this is done with a dynamic ad template served from a rich-media platform, but for this project that was not an option.</p>
+          </div>
+        </article>
+        <article class="row">
+          <div>
+            <h4>The Solution</h4>
+            <p>Most rich-media platforms offer semi-automated workflows that enable the mass-creation of ads. There was no reason that the same thing couldn't be done locally, without the need for platform specific code, by scripting Google Sheets to manage all the image, copy, style, and animation content. A CSV file exported from Google Sheets would be used to parse rows into individual JSON files (one for each ad). The new JSON files would trigger the creation of hundreds of ads by adding the appropriate content to custom template files. I also created a system for modularizing lightweight animations created with After Effects + Lottie.</p>
+          </div>
+        </article>
+        <h5><a href="https://mattblackstone.com/digital-advertising/mailchimp/wave2/">View examples*</a></h5>
+        <h6>*Disable ad blockers to view</h6>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

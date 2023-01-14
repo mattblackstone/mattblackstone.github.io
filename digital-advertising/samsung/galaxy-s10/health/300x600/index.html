@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+			var clickTag = "http://samsung.com/";
+		</script>
+    <div id="backup" onclick="window.open(window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="devices">
+        <div id="phone" class="sprite-png device-s10p"></div>
+        <div class="reflection gpu">
+          <div id="ref" class="sprite-png buds-reflect"></div>
+          <div id="ref_red" class="sprite-png buds-reflect-redlight invisible"></div>
+          <div id="ref_green" class="sprite-png buds-reflect-greenlight invisible"></div>
+        </div>
+        <div class="buds gpu">
+          <div id="lid" class="sprite-png buds-lid"></div>
+        </div>
+        <div class="buds gpu">
+          <div id="base" class="sprite-png buds-base"></div>
+          <div id="base_red" class="sprite-png buds-base-redlight invisible"></div>
+          <div id="base_green" class="sprite-png buds-base-greenlight invisible"></div>
+        </div>
+      </div>
+      <div id="headline" class="anti-alias">Charge<br>what’s<br>next.</div>
+        <div id="cta">
+          <div id="cta_up" class="sprite-png cta-up"></div>
+          <div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+        </div>
+        <div id="logo" class="sprite-png logo"></div>
+        <div id="branding" class="sprite-png branding"></div>
+      </div>
+
+      <!--[if !IE]><!-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+      <script src="bundle.js"></script>
+      <!--<![endif]-->
+      <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+
+</html>

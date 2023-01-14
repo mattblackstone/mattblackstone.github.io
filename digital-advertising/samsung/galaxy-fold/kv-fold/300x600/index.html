@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="ad.size" content="width=300,height=600">
+  </head>
+
+  <body>
+    <script>
+			var clickTag = "http://samsung.com/";
+		</script>
+    <div id="backup" onclick="window.open(window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="device" class="gpu">
+        <div id="shadow">
+          <div class="side-left">
+            <div id="shadow_left">
+              <div class="sprite-png shadow-left"></div>
+            </div>
+          </div>
+          <div class="side-right">
+            <div id="shadow_right">
+              <div class="sprite-png shadow-left"></div>
+            </div>
+          </div>
+        </div>
+        <div id="fold">
+          <div class="side-left">
+            <div id="fold_left">
+              <div id="parts_left">
+                <div class="side-bg"></div>
+                <div id="ltr_l_F" class="sprite-png letter-F ltr"></div>
+                <div id="ltr_l_o" class="sprite-png letter-o ltr"></div>
+                <div id="ltr_l_l" class="sprite-png letter-l ltr"></div>
+                <div id="edge_bl" class="sprite-png edge-bl"></div>
+                <div id="bezel_left" class="sprite-png bezel-left"></div>
+                <div id="glare_left"></div>
+              </div>
+            </div>
+          </div>
+          <div class="side-right">
+            <div id="fold_right">
+              <div id="parts_right">
+                <div class="side-bg"></div>
+                <div id="glare_right"></div>
+                <div id="reflect_right"></div>
+                <div id="ltr_r_o" class="sprite-png letter-o ltr"></div>
+                <div id="ltr_r_l" class="sprite-png letter-l ltr"></div>
+                <div id="ltr_r_d" class="sprite-png letter-d ltr"></div>
+                <div id="edge_br" class="sprite-png edge-br"></div>
+                <div id="bezel_right" class="sprite-png bezel-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-middle">
+          <div id="fold_middle">
+            <div id="parts_middle">
+              <div class="middle-bg"></div>
+              <div id="ltr_m_o" class="sprite-png letter-o ltr"></div>
+              <div id="ltr_m_l" class="sprite-png letter-l ltr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="headline" class="anti-alias">The future unfolds.</div>
+      <div id="cta">
+        <div id="cta_up" class="sprite-png cta-up"></div>
+        <div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+      </div>
+      <div id="logo" class="sprite-png logo"></div>
+      <div id="branding" class="sprite-png branding"></div>
+    </div>
+    <!-- <div class="backup" style="opacity: 0.5"></div> -->
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+
+</html>

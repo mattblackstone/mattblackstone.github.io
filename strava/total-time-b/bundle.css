@@ -1,0 +1,1235 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.transform-reset {
+  transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0); }
+
+@supports (-moz-appearance: meterbar) {
+  .gpu {
+    transform: translateZ(0) rotate(0.02deg); } }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Book.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-ExtraBold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+html,
+body {
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.cell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.primary {
+  -ms-flex: 1;
+      flex: 1; }
+
+.secondary {
+  margin: 12px;
+  height: 30%; }
+
+@media (min-aspect-ratio: 1 / 1) {
+  .container {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .reverse {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+  .secondary {
+    height: auto;
+    width: 30%; } }
+
+@media (max-width: 360px), (max-height: 667px) {
+  .primary {
+    transform: scale(0.875); }
+  #title, #title_a, #title_b {
+    font-size: 32px; }
+  #sports {
+    font-size: 14px; } }
+
+@media (max-width: 320px), (max-height: 568px) {
+  .primary {
+    transform: scale(0.667); }
+  #title, #title_a, #title_b {
+    font-size: 24px; }
+  #sports {
+    font-size: 12px; } }
+
+#sports {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  width: 100%;
+  display: table; }
+  #sports > div {
+    max-width: 336px;
+    display: table-row; }
+    #sports > div > div {
+      display: table-cell;
+      white-space: nowrap; }
+    #sports > div .sport-name {
+      text-align: right;
+      padding-right: 0.5em; }
+    #sports > div .sport-dot {
+      width: 0.5em; }
+      #sports > div .sport-dot:before {
+        content: '\2022';
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 0.5em;
+        vertical-align: middle; }
+    #sports > div .sport-time {
+      font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+      text-align: left;
+      padding-left: 0.5em; }
+      #sports > div .sport-time span {
+        font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif; }
+    #sports > div #dot0 {
+      color: #fc5200; }
+    #sports > div #dot1 {
+      color: #FFB084; }
+    #sports > div #dot2 {
+      color: #1F63F3; }
+    #sports > div #dot3 {
+      color: #bfbfc8; }
+    #sports > div #dot4 {
+      color: white; }
+
+#content_b {
+  color: white;
+  background-color: black; }
+  #content_b #visual_b {
+    width: 312px;
+    height: 312px;
+    margin: auto; }
+    #content_b #visual_b #rings {
+      position: absolute;
+      transform: rotateZ(-90deg) rotateX(180deg);
+      transform-origin: 50% 50%; }
+      #content_b #visual_b #rings #ring0 {
+        stroke: #fc5200; }
+      #content_b #visual_b #rings #ring1 {
+        stroke: #FFB084; }
+      #content_b #visual_b #rings #ring2 {
+        stroke: #1F63F3; }
+      #content_b #visual_b #rings #ring3 {
+        stroke: #bfbfc8; }
+      #content_b #visual_b #rings #ring4 {
+        stroke: white; }
+    #content_b #visual_b .circ {
+      fill: transparent;
+      stroke: white;
+      stroke-width: 1px; }
+    #content_b #visual_b .ring {
+      transform-origin: 50% 50%;
+      fill: transparent;
+      stroke-width: 8px;
+      stroke-linecap: butt; }
+  #content_b #icons {
+    position: absolute;
+    transform: translateZ(0);
+    width: 312px;
+    height: 312px; }
+    #content_b #icons .icon-circ {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+      border-radius: 50%;
+      left: 50%;
+      margin-left: -12px; }
+      #content_b #icons .icon-circ .sprite-svg {
+        overflow: hidden; }
+    #content_b #icons #icon0 {
+      background-color: #fc5200; }
+    #content_b #icons #icon1 {
+      background-color: #FFB084; }
+    #content_b #icons #icon2 {
+      background-color: #1F63F3; }
+    #content_b #icons #icon3 {
+      background-color: #bfbfc8; }
+    #content_b #icons #icon4 {
+      background-color: white; }
+    #content_b #icons #icon_big {
+      position: absolute;
+      left: 108px;
+      top: 108px;
+      width: 96px;
+      height: 96px;
+      overflow: hidden; }
+
+#title_b {
+  max-width: 336px;
+  font-size: 36px;
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 700; }
+
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.sports_bike_light_large {
+  background-position: 14.457831325301205% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_bike_light_medium {
+  background-position: 47.27540500736377% 88.88888888888889%;
+  width: 33px;
+  height: 32px; }
+.sprite-svg.sports_bike_light_small {
+  background-position: 95.6268221574344% 24.390243902439025%;
+  width: 26px;
+  height: 24px; }
+.sprite-svg.sports_bike_light_xsmall {
+  background-position: 98.99280575539568% 21.686746987951807%;
+  width: 17px;
+  height: 16px; }
+.sprite-svg.sports_bike_normal_large {
+  background-position: 36.144578313253014% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_bike_normal_medium {
+  background-position: 42.415316642120764% 88.88888888888889%;
+  width: 33px;
+  height: 32px; }
+.sprite-svg.sports_bike_normal_small {
+  background-position: 95.6268221574344% 28.048780487804876%;
+  width: 26px;
+  height: 24px; }
+.sprite-svg.sports_bike_normal_xsmall {
+  background-position: 98.99280575539568% 24.096385542168676%;
+  width: 17px;
+  height: 16px; }
+.sprite-svg.sports_bike_orange_xlarge {
+  background-position: 0 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_e_bike_light_large {
+  background-position: 79.51807228915662% 30.379746835443036%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_e_bike_light_medium {
+  background-position: 85% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_e_bike_light_small {
+  background-position: 87.20930232558139% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_e_bike_light_xsmall {
+  background-position: 98.85057471264368% 86.74698795180723%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_e_bike_normal_large {
+  background-position: 14.457831325301205% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_e_bike_normal_medium {
+  background-position: 91.76470588235294% 24.691358024691358%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_e_bike_normal_small {
+  background-position: 73.25581395348837% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_e_bike_normal_xsmall {
+  background-position: 98.85057471264368% 65.06024096385542%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_e_bike_orange_xlarge {
+  background-position: 31.16883116883117% 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_handcycle_light_large {
+  background-position: 28.91566265060241% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_handcycle_light_medium {
+  background-position: 91.76470588235294% 39.50617283950617%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_handcycle_light_small {
+  background-position: 55.81395348837209% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_handcycle_light_xsmall {
+  background-position: 98.85057471264368% 43.373493975903614%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_handcycle_normal_large {
+  background-position: 86.74698795180723% 22.78481012658228%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_handcycle_normal_medium {
+  background-position: 91.76470588235294% 69.1358024691358%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_handcycle_normal_small {
+  background-position: 41.86046511627907% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_handcycle_normal_xsmall {
+  background-position: 98.85057471264368% 31.325301204819276%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_handcycle_orange_xlarge {
+  background-position: 31.16883116883117% 32.87671232876713%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_hike_light_large {
+  background-position: 72.28915662650603% 30.379746835443036%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_hike_light_medium {
+  background-position: 91.76470588235294% 83.95061728395062%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_hike_light_small {
+  background-position: 24.41860465116279% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_hike_light_xsmall {
+  background-position: 98.85057471264368% 96.3855421686747%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_hike_normal_large {
+  background-position: 72.28915662650603% 45.56962025316456%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_hike_normal_medium {
+  background-position: 18.823529411764707% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_hike_normal_small {
+  background-position: 3.488372093023256% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_hike_normal_xsmall {
+  background-position: 98.85057471264368% 53.01204819277108%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_hike_orange_xlarge {
+  background-position: 46.753246753246756% 32.87671232876713%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_ice_skate_light_large {
+  background-position: 79.51807228915662% 60.75949367088607%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_ice_skate_light_medium {
+  background-position: 32.94117647058823% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_ice_skate_light_small {
+  background-position: 95.34883720930233% 82.92682926829268%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_ice_skate_light_xsmall {
+  background-position: 91.95402298850574% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_ice_skate_normal_large {
+  background-position: 7.228915662650603% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_ice_skate_normal_medium {
+  background-position: 70.88235294117646% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_ice_skate_normal_small {
+  background-position: 95.34883720930233% 64.63414634146342%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_ice_skate_normal_xsmall {
+  background-position: 98.85057471264368% 36.144578313253014%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_ice_skate_orange_xlarge {
+  background-position: 31.16883116883117% 49.31506849315068%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_inline_skate_light_large {
+  background-position: 43.373493975903614% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_inline_skate_light_medium {
+  background-position: 75.29411764705883% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_inline_skate_light_small {
+  background-position: 95.34883720930233% 50%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_inline_skate_light_xsmall {
+  background-position: 48.275862068965516% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_inline_skate_normal_large {
+  background-position: 72.28915662650603% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_inline_skate_normal_medium {
+  background-position: 96.47058823529412% 0;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_inline_skate_normal_small {
+  background-position: 38.372093023255815% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_inline_skate_normal_xsmall {
+  background-position: 98.85057471264368% 74.6987951807229%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_inline_skate_orange_xlarge {
+  background-position: 62.33766233766234% 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_kayaking_light_large {
+  background-position: 21.686746987951807% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_kayaking_light_medium {
+  background-position: 96.47058823529412% 19.753086419753085%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_kayaking_light_small {
+  background-position: 95.34883720930233% 42.68292682926829%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_kayaking_light_xsmall {
+  background-position: 73.5632183908046% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_kayaking_normal_large {
+  background-position: 50.602409638554214% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_kayaking_normal_medium {
+  background-position: 70.58823529411765% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_kayaking_normal_small {
+  background-position: 95.34883720930233% 93.90243902439025%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_kayaking_normal_xsmall {
+  background-position: 98.85057471264368% 55.42168674698795%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_kayaking_orange_xlarge {
+  background-position: 15.584415584415584% 65.75342465753425%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_kitesurf_light_large {
+  background-position: 86.74698795180723% 0;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_kitesurf_light_medium {
+  background-position: 9.411764705882353% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_kitesurf_light_small {
+  background-position: 34.883720930232556% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_kitesurf_light_xsmall {
+  background-position: 64.36781609195403% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_kitesurf_normal_large {
+  background-position: 86.74698795180723% 30.379746835443036%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_kitesurf_normal_medium {
+  background-position: 91.76470588235294% 59.25925925925926%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_kitesurf_normal_small {
+  background-position: 66.27906976744185% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_kitesurf_normal_xsmall {
+  background-position: 98.85057471264368% 67.46987951807229%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_kitesurf_orange_xlarge {
+  background-position: 62.33766233766234% 65.75342465753425%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_multi_light_large {
+  background-position: 86.74698795180723% 68.35443037974683%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_multi_light_medium {
+  background-position: 91.76470588235294% 14.814814814814815%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_multi_light_small {
+  background-position: 100% 0;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_multi_light_xsmall 2 {
+  background-position: 41.37931034482759% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_multi_normal_large {
+  background-position: 7.228915662650603% 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_multi_normal_medium {
+  background-position: 61.470588235294116% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_multi_normal_small {
+  background-position: 95.34883720930233% 75.60975609756098%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_multi_normal_xsmall copy {
+  background-position: 78.16091954022988% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_multi_orange_xlarge {
+  background-position: 77.92207792207792% 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_other_light_large {
+  background-position: 21.686746987951807% 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_other_light_medium {
+  background-position: 51.76470588235294% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_other_light_small {
+  background-position: 6.976744186046512% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_other_light_xsmall {
+  background-position: 62.06896551724138% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_other_normal_large {
+  background-position: 14.457831325301205% 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_other_normal_medium {
+  background-position: 66.17647058823529% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_other_normal_small {
+  background-position: 100% 18.29268292682927%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_other_normal_xsmall {
+  background-position: 50.57471264367816% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_other_orange_xlarge {
+  background-position: 77.92207792207792% 0;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_rock_climbing_light_large {
+  background-position: 86.74698795180723% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_rock_climbing_light_medium {
+  background-position: 91.76470588235294% 0;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_rock_climbing_light_small {
+  background-position: 90.69767441860465% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_rock_climbing_light_xsmall {
+  background-position: 98.85057471264368% 89.1566265060241%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_rock_climbing_normal_large {
+  background-position: 86.74698795180723% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_rock_climbing_normal_medium {
+  background-position: 91.76470588235294% 19.753086419753085%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_rock_climbing_normal_small {
+  background-position: 80.23255813953489% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_rock_climbing_normal_xsmall {
+  background-position: 98.85057471264368% 77.10843373493977%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_rock_climbing_orange_xlarge {
+  background-position: 46.753246753246756% 65.75342465753425%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_rowing_light_large {
+  background-position: 86.74698795180723% 45.56962025316456%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_rowing_light_medium {
+  background-position: 91.76470588235294% 44.44444444444444%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_rowing_light_small {
+  background-position: 59.30232558139535% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_rowing_light_xsmall {
+  background-position: 98.85057471264368% 45.78313253012048%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_rowing_normal_large {
+  background-position: 86.74698795180723% 37.9746835443038%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_rowing_normal_medium {
+  background-position: 91.76470588235294% 64.19753086419753%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_rowing_normal_small {
+  background-position: 48.83720930232558% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_rowing_normal_xsmall {
+  background-position: 98.85057471264368% 33.734939759036145%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_rowing_orange_xlarge {
+  background-position: 31.16883116883117% 65.75342465753425%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_run_light_large {
+  background-position: 86.74698795180723% 15.189873417721518%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_run_light_medium {
+  background-position: 91.76470588235294% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_run_light_small {
+  background-position: 27.906976744186046% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_run_light_xsmall {
+  background-position: 98.99280575539568% 26.50602409638554%;
+  width: 17px;
+  height: 16px; }
+.sprite-svg.sports_run_normal_large {
+  background-position: 86.74698795180723% 7.594936708860759%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_run_normal_medium {
+  background-position: 14.117647058823529% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_run_normal_small {
+  background-position: 13.953488372093023% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_run_normal_xsmall {
+  background-position: 98.99280575539568% 28.91566265060241%;
+  width: 17px;
+  height: 16px; }
+.sprite-svg.sports_run_orange_xlarge {
+  background-position: 0 65.75342465753425%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_ski_light_large {
+  background-position: 65.06024096385542% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_ski_light_medium {
+  background-position: 37.64705882352941% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_ski_light_small {
+  background-position: 95.34883720930233% 86.58536585365853%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_ski_light_xsmall {
+  background-position: 43.67816091954023% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_ski_normal_large {
+  background-position: 36.144578313253014% 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_ski_normal_medium {
+  background-position: 56.470588235294116% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_ski_normal_small {
+  background-position: 95.34883720930233% 68.29268292682927%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_ski_normal_xsmall {
+  background-position: 98.85057471264368% 48.19277108433735%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_ski_orange_xlarge {
+  background-position: 62.33766233766234% 49.31506849315068%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_snow_light_large {
+  background-position: 43.373493975903614% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snow_light_medium {
+  background-position: 80% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snow_light_small {
+  background-position: 95.34883720930233% 53.65853658536585%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snow_light_xsmall {
+  background-position: 98.85057471264368% 57.83132530120482%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snow_normal_large {
+  background-position: 36.144578313253014% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snow_normal_medium {
+  background-position: 96.47058823529412% 4.938271604938271%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snow_normal_small {
+  background-position: 45.348837209302324% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snow_normal_xsmall {
+  background-position: 59.770114942528735% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snow_orange_xlarge {
+  background-position: 62.33766233766234% 32.87671232876713%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_snowboard_light_large {
+  background-position: 7.228915662650603% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snowboard_light_medium {
+  background-position: 96.47058823529412% 14.814814814814815%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snowboard_light_small {
+  background-position: 31.3953488372093% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snowboard_light_xsmall {
+  background-position: 94.25287356321839% 96.3855421686747%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snowboard_normal_large {
+  background-position: 0 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snowboard_normal_medium {
+  background-position: 96.47058823529412% 9.876543209876543%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snowboard_normal_small {
+  background-position: 100% 10.975609756097562%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snowboard_normal_xsmall {
+  background-position: 98.85057471264368% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snowboard_orange_xlarge {
+  background-position: 62.33766233766234% 0;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_snowshoe_light_large {
+  background-position: 65.06024096385542% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snowshoe_light_medium {
+  background-position: 89.41176470588235% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snowshoe_light_small {
+  background-position: 95.34883720930233% 46.34146341463415%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snowshoe_light_xsmall {
+  background-position: 98.85057471264368% 79.51807228915662%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snowshoe_normal_large {
+  background-position: 57.83132530120482% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_snowshoe_normal_medium {
+  background-position: 84.70588235294117% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_snowshoe_normal_small {
+  background-position: 95.34883720930233% 57.31707317073171%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_snowshoe_normal_xsmall {
+  background-position: 68.96551724137932% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_snowshoe_orange_xlarge {
+  background-position: 46.753246753246756% 49.31506849315068%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_stand_up_paddling_light_large {
+  background-position: 28.91566265060241% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_stand_up_paddling_light_medium {
+  background-position: 65.88235294117646% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_stand_up_paddling_light_small {
+  background-position: 95.34883720930233% 60.97560975609756%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_stand_up_paddling_light_xsmall {
+  background-position: 98.85057471264368% 69.87951807228916%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_stand_up_paddling_normal_large {
+  background-position: 21.686746987951807% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_stand_up_paddling_normal_medium {
+  background-position: 61.1764705882353% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_stand_up_paddling_normal_small {
+  background-position: 95.34883720930233% 71.95121951219512%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_stand_up_paddling_normal_xsmall {
+  background-position: 98.85057471264368% 98.79518072289157%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_stand_up_paddling_orange_xlarge {
+  background-position: 0 0;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_surfing_light_large {
+  background-position: 0 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_surfing_light_medium {
+  background-position: 47.05882352941177% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_surfing_light_small {
+  background-position: 95.34883720930233% 79.26829268292683%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_surfing_light_xsmall {
+  background-position: 57.47126436781609% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_surfing_normal_large {
+  background-position: 79.51807228915662% 68.35443037974683%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_surfing_normal_medium {
+  background-position: 42.35294117647059% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_surfing_normal_small {
+  background-position: 95.34883720930233% 90.2439024390244%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_surfing_normal_xsmall {
+  background-position: 98.85057471264368% 40.963855421686745%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_surfing_orange_xlarge {
+  background-position: 0 49.31506849315068%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_triathlon_light_large {
+  background-position: 79.51807228915662% 53.164556962025316%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_triathlon_light_medium {
+  background-position: 28.235294117647058% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_triathlon_light_small {
+  background-position: 0 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_triathlon_light_xsmall {
+  background-position: 98.85057471264368% 62.65060240963855%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_triathlon_normal_large {
+  background-position: 72.28915662650603% 53.164556962025316%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_triathlon_normal_medium {
+  background-position: 23.529411764705884% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_triathlon_normal_small {
+  background-position: 10.465116279069768% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_triathlon_normal_xsmall {
+  background-position: 98.85057471264368% 84.33734939759036%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_triathlon_orange_xlarge {
+  background-position: 46.753246753246756% 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_velomobile_light_large {
+  background-position: 79.51807228915662% 37.9746835443038%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_velomobile_light_medium {
+  background-position: 4.705882352941177% 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_velomobile_light_small {
+  background-position: 20.930232558139537% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_velomobile_light_xsmall {
+  background-position: 89.65517241379311% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_velomobile_normal_large {
+  background-position: 72.28915662650603% 37.9746835443038%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_velomobile_normal_medium {
+  background-position: 0 96.29629629629629%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_velomobile_normal_small {
+  background-position: 95.34883720930233% 39.02439024390244%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_velomobile_normal_xsmall {
+  background-position: 52.87356321839081% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_velomobile_orange_xlarge {
+  background-position: 46.753246753246756% 0;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_walk_light_large {
+  background-position: 0 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_walk_light_medium {
+  background-position: 91.76470588235294% 79.01234567901234%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_walk_light_small {
+  background-position: 95.48762736535663% 31.70731707317073%;
+  width: 25px;
+  height: 24px; }
+.sprite-svg.sports_walk_light_xsmall {
+  background-position: 71.26436781609195% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_walk_normal_large {
+  background-position: 86.74698795180723% 60.75949367088607%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_walk_normal_medium {
+  background-position: 91.76470588235294% 74.07407407407408%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_walk_normal_small {
+  background-position: 95.48762736535663% 35.36585365853659%;
+  width: 25px;
+  height: 24px; }
+.sprite-svg.sports_walk_normal_xsmall {
+  background-position: 98.85057471264368% 38.55421686746988%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_walk_orange_xlarge {
+  background-position: 15.584415584415584% 32.87671232876713%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_water_light_large {
+  background-position: 79.51807228915662% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_water_light_medium {
+  background-position: 91.76470588235294% 54.32098765432099%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_water_light_small {
+  background-position: 52.325581395348834% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_water_light_xsmall {
+  background-position: 98.85057471264368% 50.602409638554214%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_water_normal_large {
+  background-position: 72.28915662650603% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_water_normal_medium {
+  background-position: 91.76470588235294% 49.382716049382715%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_water_normal_small {
+  background-position: 62.7906976744186% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_water_normal_xsmall {
+  background-position: 98.85057471264368% 60.24096385542169%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_water_orange_xlarge {
+  background-position: 0 32.87671232876713%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_weight_training_light_large {
+  background-position: 79.51807228915662% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_weight_training_light_medium {
+  background-position: 91.76470588235294% 34.5679012345679%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_weight_training_light_small {
+  background-position: 69.76744186046511% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_weight_training_light_xsmall {
+  background-position: 98.85057471264368% 72.28915662650603%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_weight_training_normal_large {
+  background-position: 50.602409638554214% 75.9493670886076%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_weight_training_normal_medium {
+  background-position: 91.76470588235294% 29.62962962962963%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_weight_training_normal_small {
+  background-position: 76.74418604651163% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_weight_training_normal_xsmall {
+  background-position: 98.85057471264368% 81.92771084337349%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_weight_training_orange_xlarge {
+  background-position: 31.16883116883117% 0;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_wheelchair_light_large {
+  background-position: 72.28915662650603% 68.35443037974683%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_wheelchair_light_medium {
+  background-position: 91.76470588235294% 9.876543209876543%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_wheelchair_light_small {
+  background-position: 83.72093023255815% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_wheelchair_light_xsmall {
+  background-position: 98.85057471264368% 93.97590361445783%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_wheelchair_normal_large {
+  background-position: 72.28915662650603% 60.75949367088607%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_wheelchair_normal_medium {
+  background-position: 91.76470588235294% 4.938271604938271%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_wheelchair_normal_small {
+  background-position: 94.18604651162791% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_wheelchair_normal_xsmall {
+  background-position: 96.55172413793103% 96.3855421686747%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_wheelchair_orange_xlarge {
+  background-position: 15.584415584415584% 16.438356164383563%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_windsurf_light_large {
+  background-position: 86.74698795180723% 53.164556962025316%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_windsurf_light_medium {
+  background-position: 80.29411764705883% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_windsurf_light_small {
+  background-position: 100% 7.317073170731708%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_windsurf_light_xsmall {
+  background-position: 45.97701149425287% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_windsurf_normal_large {
+  background-position: 57.83132530120482% 83.54430379746836%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_windsurf_normal_medium {
+  background-position: 75.58823529411765% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_windsurf_normal_small {
+  background-position: 100% 14.634146341463415%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_windsurf_normal_xsmall {
+  background-position: 55.172413793103445% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_windsurf_orange_xlarge {
+  background-position: 15.584415584415584% 49.31506849315068%;
+  width: 96px;
+  height: 96px; }
+.sprite-svg.sports_yoga_light_large {
+  background-position: 79.51807228915662% 45.56962025316456%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_yoga_light_medium {
+  background-position: 56.76470588235294% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_yoga_light_small {
+  background-position: 100% 3.658536585365854%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_yoga_light_xsmall {
+  background-position: 66.66666666666667% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_yoga_normal_large {
+  background-position: 28.91566265060241% 91.13924050632912%;
+  width: 48px;
+  height: 48px; }
+.sprite-svg.sports_yoga_normal_medium {
+  background-position: 52.05882352941177% 88.88888888888889%;
+  width: 32px;
+  height: 32px; }
+.sprite-svg.sports_yoga_normal_small {
+  background-position: 17.441860465116278% 100%;
+  width: 24px;
+  height: 24px; }
+.sprite-svg.sports_yoga_normal_xsmall {
+  background-position: 75.86206896551724% 91.56626506024097%;
+  width: 16px;
+  height: 16px; }
+.sprite-svg.sports_yoga_orange_xlarge {
+  background-position: 15.584415584415584% 0;
+  width: 96px;
+  height: 96px; }
