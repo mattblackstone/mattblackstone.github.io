@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+			var clickTag = "http://samsung.com/";
+		</script>
+    <div id="backup" onclick="window.open(window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="devices" class="alpha-0">
+        <div class="phone gpu">
+          <div id="s10p" class="gpu">
+            <div class="sprite-png s10p-edge-left"></div>
+            <div class="screen">
+              <img id="paris_vert" src="paris-2x.jpg">
+            </div>
+            <div id="s10p_front" class="sprite-png s10p-front"></div>
+            <div id="s10p_edge" class="sprite-png s10p-edge-left"></div>
+            <div class="screen">
+              <div id="glare"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lifestyle" class="full-bleed">
+        <img id="paris_blur" src="paris-2x.jpg">
+      </div>
+      <div id="holding">
+        <div id="app">
+          <img id="paris_horiz" src="paris-2x.jpg" class="gpu">
+          <div id="ui" class="gpu">
+            <div id="ui_line_left"></div>
+            <div id="ui_circ"></div>
+            <div id="ui_dot"></div>
+            <div id="ui_dot_big" class="invisible"></div>
+            <div id="ui_line_right"></div>
+          </div>
+        </div>
+        <div id="phone_horiz" class="sprite-png s10p-front gpu"></div>
+        <div class="sprite-png hands gpu"></div>
+      </div>
+      <h1 id="headline1" class="anti-alias alpha-0">Pro Assist.</h1>
+      <h1 id="headline2" class="anti-alias alpha-0">Perfect moment.<br><span id="h2b" class="alpha-0">Perfect<br>shot.</span></h1>
+      <h1 id="headline3" class="anti-alias alpha-0">Create what’s next.</h1>
+      <div id="cta" class="alpha-0">
+        <div id="cta_up" class="sprite-png cta-up"></div>
+        <div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+      </div>
+      <div id="logo" class="sprite-png logo"></div>
+      <div id="branding" class="sprite-png branding"></div>
+      <!-- <div class="backup full-bleed" style="opacity: 0.5"></div> -->
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+
+</html>

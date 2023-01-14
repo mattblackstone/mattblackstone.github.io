@@ -1,0 +1,250 @@
+{
+  "athleteInfo": {
+    "athleteId": 0,
+    "firstName": "John",
+    "lastName": "Doe",
+    "profilePicture": "https://www.strava.com/athletes",
+    "gender": "F",
+    "measurementPreference": "feet",
+    "primaryActivityType": "Run",
+    "relativeEffortAccess": true
+  },
+  "timeByActivityType": {
+    "totalSeconds": 680839,
+    "byActivityType": [{
+      "activityType": "Workout",
+      "seconds": 176102
+    }, {
+      "activityType": "WaterSport",
+      "seconds": 4519
+    }, {
+      "activityType": "Hike",
+      "seconds": 115799
+    }, {
+      "activityType": "Snowshoe",
+      "seconds": 6593
+    }, {
+      "activityType": "Swim",
+      "seconds": 14819
+    }, {
+      "activityType": "NordicSki",
+      "seconds": 6623
+    }, {
+      "activityType": "Ride",
+      "seconds": 113278
+    }, {
+      "activityType": "Walk",
+      "seconds": 77490
+    }, {
+      "activityType": "EBikeRide",
+      "seconds": 8683
+    }, {
+      "activityType": "Run",
+      "seconds": 156933
+    }]
+  },
+  "distanceByActivityType": {
+    "totalMeters": 1169118.8008728002,
+    "byActivityType": [{
+      "activityType": "Workout",
+      "meters": 0
+    }, {
+      "activityType": "WaterSport",
+      "meters": 7563.299926758001
+    }, {
+      "activityType": "Hike",
+      "meters": 116602.900268554
+    }, {
+      "activityType": "Snowshoe",
+      "meters": 4650.5
+    }, {
+      "activityType": "Swim",
+      "meters": 10300
+    }, {
+      "activityType": "NordicSki",
+      "meters": 7286
+    }, {
+      "activityType": "Ride",
+      "meters": 523419.40063476504
+    }, {
+      "activityType": "Walk",
+      "meters": 86310.300750731
+    }, {
+      "activityType": "EBikeRide",
+      "meters": 18686.5
+    }, {
+      "activityType": "Run",
+      "meters": 394299.899291992
+    }]
+  },
+  "hilliestActivity": {
+    "activityId": 0,
+    "activityType": "Ride",
+    "date": "2019-06-02 10:37:54.0",
+    "meters": 74195.8984375,
+    "elevGainMeters": 1198,
+    "elevGainChart": [72.6, 72.6, 72.2, 72.6, 72.6, 72.4, 70.8, 70.8, 72.4, 74.6, 76.8, 76.6, 76.6, 79.6, 80.4, 81, 82.4, 83.4, 83.6, 84.6, 84.2, 84.2, 82.4, 89, 95, 99.2, 101.2, 107.2, 113.4, 115, 118, 133.6, 136.4, 137.4, 138.6, 142.8, 146.6, 150.6, 156.6, 182.2, 185, 186.4, 204.2, 214.6, 218.8, 218.8, 215.2, 213, 197.4, 193, 192.2, 173.4, 167.4, 166.4, 163.2, 163.2, 152.4, 150.4, 150.2, 144.8, 141.2, 139.6, 138.6, 136.6, 136.4, 138, 139.2, 144.4, 150.6, 152.6, 172.8, 178.6, 185.2, 198.6, 205.8, 207.6, 210, 209.2, 201.8, 184.2, 172.8, 170, 158.8, 165.8, 145.4, 142.4, 132.4, 131.2, 128.8, 128.2, 126.8, 121.8, 119, 112.4, 107.6, 102, 101.6, 101, 100, 97, 96.8, 96.6, 98, 99.4, 106.8, 108, 110, 103.6, 94.4, 94.2, 94.2, 90, 94.6, 94.8, 94, 93.2, 93.8, 94.8, 94.8, 78.4, 71.4, 68.8, 59.6, 54.6, 53.8, 52.2, 52.8, 49.2, 48.4, 49, 51.6, 58.2, 62.8, 63.8, 68.4, 62.6, 58.8, 48.4, 46.6, 48, 49.8, 52.8, 59.4, 68.6, 69, 69.6, 70.8, 56.2, 45, 43.2, 43.2, 43.4, 45.8, 46.6, 44.8, 44.6, 46.2, 46.6, 45.6, 45.6, 45, 52.6, 52.4, 57.2, 57, 57, 59.2, 59.6, 59.6, 61.4, 67.4, 70.6, 71.2, 71.2, 75, 96.6, 96.2, 90.6, 90.4, 95.6, 98.6, 101.6, 86, 83.4, 88.2, 95, 92, 89.8, 90.4, 90.4, 91, 91.6, 92.2, 91.8, 94, 94, 94.2, 95.6, 95.8, 98, 121.6, 122.8, 132, 133.4, 134.4, 135.6, 138, 138.8, 138.8, 138.8, 138.8, 138.8, 138.8, 138.8, 138.8, 138.8, 138.6, 143.2, 143.8, 145, 143.2, 145, 151.6, 150.8, 154, 153.4, 152.8, 154.4, 154.4, 149.8, 149.2, 145.2, 146.6, 149.8, 150.2, 155.6, 156.2, 158.6, 158.8, 159, 167.2, 168.8, 171, 175.2, 168, 167, 163.6, 163.8, 164, 155.8, 141.8, 129.8, 123.8, 123.2, 114.4, 100.6, 86.4, 91.6, 92.4, 93, 87.4, 85, 83.8, 87.4, 90.8, 85.4, 85.2, 80.4, 63.4, 57.6, 49.8, 34.6, 33.6, 42.2, 59.8, 78.2, 82, 87, 92.4, 114.8, 122.8, 123.6, 126.4, 130.8, 140.8, 148.6, 151.8, 154.6, 157.4, 161.8, 164.6, 166.6, 183.4, 187, 190, 193.4, 208, 209.2, 211, 212.4, 213, 215.6, 216.2, 218.4, 219.8, 223.6, 237.8, 240.4, 240.6, 240.8, 243.6, 247, 252.6, 256.2, 261.4, 262.4, 285.4, 305.8, 312.2, 326, 327, 327.6, 335.6, 337.4, 338, 340.6, 343.6, 346, 346.2, 361.4, 364.4, 365.2, 387.8, 398, 399.2, 399.6, 400.2, 410, 414, 415.4, 416.4, 423.2, 423.6, 432.6, 441.4, 441.6, 443.6, 444.8, 446.4, 446.6, 448.2, 453, 456.4, 458.2, 461.8, 464.2, 464.6, 465.2, 472, 472.8, 473.2, 479.8, 483.8, 484, 486.4, 496.2, 500.8, 505.6, 506.2, 506.4, 504.6, 503.8, 497.4, 491.6, 484.2, 482.2, 478.8, 460.6, 424.2, 419.2, 408.8, 403, 400.8, 388.8, 377.6, 370, 369.6, 363.4, 357.6, 355.4, 354.6, 325.2, 318.4, 317.4, 288.8, 282, 257.2, 256.4, 256.2, 256, 254.4, 254.6, 274.2, 280.4, 280.6, 282.4, 284, 295.2, 292.8, 292.2, 292.2, 310.8, 306.6, 301.8, 301.4, 296.8, 290.4, 283, 282.2, 282.6, 283.8, 290.4, 305.6, 307, 311.6, 308.8, 300, 297, 293.6, 290.8, 293.4, 296.6, 309.8, 316.2, 323, 324.2, 325.2, 326.6, 328.2, 333.8, 337, 338.2, 339.4, 365, 366.6, 371.2, 372.4, 373.8, 376.6, 376.6, 372.4, 371.4, 364.4, 361.6, 356.8, 351.8, 344.8, 343.8, 337.8, 323.8, 297.2, 293.6, 287.4, 286, 285.8, 280, 277.8, 271.8, 256.6, 238, 235.4, 229, 226.2, 210.8, 205.2, 200.2, 194.4, 193, 191.4, 180.6, 174.4, 172.4, 168.2, 163, 153.4, 155.2, 154.2, 154.4, 154.6, 154.4, 154.2, 123.2, 114.8, 110.6, 93.2, 91.8, 91.6, 91.4, 91.2, 85],
+    "polyline": "}hzfFtdfkVw@C[fF{BlDaPzCqOlLg@fB`LkIeDxK}F`FoEhAiAdHeXzZeFtLeAWBpRcOfe@kObDeKxH{CxFuHJaHpDErPmAlKnEvMEvG}Y|k@wDpSEpLfEzr@rAjbBkTLaX{TgCH{@zCjCrKc@rD_FrBqILyEdHiFdCwa@|`@mBlNaErMaKpLiKvRoR`IeDzTyBlDcd@jSqd@|J}ShOoObH?bF}^jVqbA`a@aHzJgXl}@s[vWcPdb@qJ|Hkb@rNtDrEfQ|H~ExJ`@dGiAvaAhAhIvClFzK~DtXyDrk@xJbN~K`SvF`CpEbD|OrJbI}@vHmFhMc@tMuXvHkRrYwBtJcMnG_K|N_@hDd@hE`FvIlQaAfS`ElArUyHnWSdG~FbSzMnMo@vH`Xp\\tImLvIpE|M]jSgRxJcEbFgK`PeFpLmSvT}JvIiAlSaStHWxHuClK}UpYmIdn@a[|BaGpFoDpB{FbHyAf[mQhOwLnIiKjLq@dHgMrIgFzJgMfSiLzLaDnL{N~W}H~KwGjK_MnDcJbL}NzCuH|Q}SjTsMdQaZbk@u`@~KeRrb@sVjIqOzJGfDoFfAmK|FkDh@wB`GqDb[mGzTcKlMuZnZsI`Iv@~GwLpQqV`BeIuBiDL}GcBuFcEo@~BwBa@}DdA}@LsDbEb@\\rBbAo@b@yCsAgDFoEcCeDiFa@_CwB^tFiADuB}HcD}A?}CqDqAsCkLcDzAb@eGkBcD}GaEmBoE_DHo@mDqGkCsE_HdP^`AeAFwD`Gv@`CyBDiH_E{JF{GqDkCy@cLlIjCbAgEeEoKwAX{AgDtGwBGmGhEuDxA|AfDSJgCgAcBvCi@?gCkAmBlCgD_@l@D}AmDaBiF`DYs@jF{DpAPp@eBbBDt@cEnCeBjBmFmInD{@bCxAsEJsFjBwAw@cDX{DaCaBu@oDpCiDSkC|AeBd@qD[uCqBcCfFcHkEcIr@qBcAaGr@}HbF]pBmDxBMeYzBgBgFmCq@xAsDcBcFV}GuAcBwB`@QwDoCOoJ`HyAY@kCgBUqMtHc@eFtBcDAgBqAaAeErA}BgCe@zF{ALc@nBsBg@qBbH}BLmB`JiL`CtDiJW_EcCiEnBiGqEyI{DgBaJm@sD}BcV`Rn@uECaEiCqC_DKkP~MvAgIdGeKxQ{IkAeFaV{@qEvEqI_CaDnIcC}EmCyAkGbGzAmGmAyEnEeEv@kHsGoH{Ds@gDgFnBgDqAiDPeJxCuCx@wSzBcE_@uKnAuDq@}H`AcN]uJcDyHmFkFsQoImEIoJaP_@iDiJeByMmJ{AsEoEgC",
+    "title": "SLOOOW bike climb",
+    "seconds": 15562
+  },
+  "totalElevationGainMeters": 14000.072471616999,
+  "relativeEffort": {
+    "totalEffort": 6139,
+    "byMonth": [{
+      "month": 8,
+      "effort": 231
+    }, {
+      "month": 11,
+      "effort": 265
+    }, {
+      "month": 2,
+      "effort": 312
+    }, {
+      "month": 5,
+      "effort": 1253
+    }, {
+      "month": 4,
+      "effort": 1130
+    }, {
+      "month": 7,
+      "effort": 211
+    }, {
+      "month": 1,
+      "effort": 503
+    }, {
+      "month": 10,
+      "effort": 686
+    }, {
+      "month": 9,
+      "effort": 303
+    }, {
+      "month": 3,
+      "effort": 729
+    }, {
+      "month": 6,
+      "effort": 516
+    }]
+  },
+  "longestActivityByTime": {
+    "activityId": 0,
+    "activityType": "Hike",
+    "date": "2019-06-15 12:37:21.0",
+    "meters": 20085.30078125,
+    "elevGainMeters": 543,
+    "polyline": "kdidH`m`dVpCjClC`@bDO~AuAzDDVs@c@{@T]m@`@n@LFa@{@EXMUNf@d@Ow@SBJf@Ae@TPShAPSa@C`@JNk@UYJl@Cu@Tj@Cw@k@l@Sa@XHTpBy@gBj@La@i@r@Oe@V`ABKGEh@PV[k@Dz@@w@MOYtAgDIq@f@xCFbB]GwBRMe@KNc@nBcBrD_IhCcB`@cDt@o@zAJdCZv@b@pAkA|BiHlAqAk@cIl@oBrAw@|@{BdE_CvAHBwAbAsClAyAtBNf@g@H_AdBBzDqAv@ZlDgC\\eAn@ZhAcBzAER}Al@_AGg@f@[LmEj@}A]gA~Ag@MaFk@En@DCOGHw@Gr@NNc@Cb@|BaD|BeIlGs@Tu@CmAg@Wf@o@K{CkE_A[oAWmFf@iEk@kB@_C_A}Bj@kBBoE~A_BRsD~@uCe@iKfAsDtAq@v@wDl@c@G}AfAuCEiCjAeCJgFhAkA|AOrCgF`Ci@`CkCjAmDGiEViArAi@fAwCtCh@fEsC|AN~ByDdCuAlAeJ~@uArAk@j@aBtA{@nEuAN{@Wm@^X]BDZZCB_DhBsCEaA|@UpAsC|AmAuImAlBOrDcDRu@f@^Hc@OVZNn@QQQTYPPIc@cEgBdFRbA}A\\mBFmGTmB\\UPwEbBsCH{@`@CEm@NNc@VBoA@zA`@]I_@Sl@]GTDDE@m@Mt@PFAc@@v@RKDi@a@\\P[\\dAe@i@PTLc@m@UCl@Gc@FROSXf@QL\\b@e@qAn@Ac@FZd@u@w@JXqC`IU|Bb@l@s@UPn@UxFwApFkE[_@dAjBr@N|@_AEuBpCaD~AZ~@fHb@yBdAa@~AgAz@IhAsB|DChAMs@LlBcAl@J^y@WcCfAeAvB_CzAkAzCwAjH}EtD{@DyEnDqAcAcBb@e@zBiAf@u@rAs@bIqArCwBtAeAIkBxCsErD_@~AAlCc@|BGa@^LsChL@tAeAtBeAR_AfCY|C`A~CGbDiApCOjDkAhAOhEc@hBFdBb@n@OrC^tBb@bGe@tDr@fFzBQ}LnTi@`FFxBcA^HbDc@pBDpBOUDd@UDXe@Y\\~B`@wBw@_A`BOzA{BT}EdDkArA_CRiAlAh@xAInA_Di@{w@`eAVjAAq@m@PPNb@q@mAs@l@~@QRqD@wE~AgCW}BeAcAy@",
+    "title": "Activity Title",
+    "seconds": 18319
+  },
+  "shortestActivityByTime": {
+    "activityId": 0,
+    "activityType": "WaterSport",
+    "date": "2019-07-17 08:04:10.0",
+    "meters": 993.599975586,
+    "elevGainMeters": 0,
+    "polyline": "nuat@eh{}TGJDJGN?ENEEUn@KOU[d@PBIc@Oh@YEVHe@k@p@Ni@FKOF?BPS@RQb@N@Dq@MG[",
+    "title": "Activity Title",
+    "seconds": 45
+  },
+  "activitiesByDayOfWeek": {
+    "totalDaysActive": 158,
+    "byDayOfWeek": [{
+      "dayOfWeek": 2,
+      "activities": 23
+    }, {
+      "dayOfWeek": 5,
+      "activities": 21
+    }, {
+      "dayOfWeek": 4,
+      "activities": 13
+    }, {
+      "dayOfWeek": 7,
+      "activities": 44
+    }, {
+      "dayOfWeek": 1,
+      "activities": 26
+    }, {
+      "dayOfWeek": 3,
+      "activities": 21
+    }, {
+      "dayOfWeek": 6,
+      "activities": 45
+    }]
+  },
+  "activitiesByActivityTypeThisYear": {
+    "totalActivities": 193,
+    "byActivityType": [{
+      "activityType": "Workout",
+      "activities": 53
+    }, {
+      "activityType": "WaterSport",
+      "activities": 4
+    }, {
+      "activityType": "Hike",
+      "activities": 14
+    }, {
+      "activityType": "Snowshoe",
+      "activities": 1
+    }, {
+      "activityType": "Swim",
+      "activities": 8
+    }, {
+      "activityType": "NordicSki",
+      "activities": 1
+    }, {
+      "activityType": "Ride",
+      "activities": 39
+    }, {
+      "activityType": "Walk",
+      "activities": 25
+    }, {
+      "activityType": "EBikeRide",
+      "activities": 1
+    }, {
+      "activityType": "Run",
+      "activities": 47
+    }]
+  },
+  "activitiesByActivityTypeLastYear": {
+    "totalActivities": 73,
+    "byActivityType": [{
+      "activityType": "WaterSport",
+      "activities": 1
+    }, {
+      "activityType": "Hike",
+      "activities": 7
+    }, {
+      "activityType": "Swim",
+      "activities": 2
+    }, {
+      "activityType": "Ride",
+      "activities": 27
+    }, {
+      "activityType": "Walk",
+      "activities": 2
+    }, {
+      "activityType": "Run",
+      "activities": 34
+    }]
+  },
+  "earliestActivity": {
+    "activityId": 0,
+    "activityType": "Hike",
+    "date": "2019-07-15 03:57:29.0",
+    "meters": 3648.5,
+    "elevGainMeters": 590,
+    "polyline": "zxlq@aag_UU`@]ZIZURAJ@l@It@GTSd@YZQL[d@_@^Yl@QP]Nm@Fa@HmBLg@P]B_A?eBRw@TYTY?QBi@Te@JqAJgANa@Ik@UM?_@FU?QCECKASFS@ISSKUWOAORW@IDOh@IJOFGVGKKBAJKEIB]E]BQ?QGU@MCMII@OA]K]?uA^o@B_@JM?GCaAHEDCFuAPo@\\wAnAQDM?EBKN]H]VUH[@KDCHa@LELG@IH@BCBEBGLG@INSTQF]EE@KNWFc@A]TGL]NKLOFELE@?DU?ABG?EJYDAFM??BIDCDGBKAEFAPOJENI@ADE?CRBBCJMLE?GCEFO?GOMEWBQAeAJSME@SIKDIVIFCH@AE??EE?BCCBFGCN?GC@D?WLGHWCMDQ?KFUBE?OGEFQDMCKIK??IEGKGYHCDI@MNMGAFC?GGGHCAMFEAII?BOBMBICELKDG?E@?@ACIBEAEDKCAICDKAEFC?G?ACC?ADCMKDGAAICBKEBE[NYEAEDIA?E@@LICIB?ECA@HCNO@GBBJABIAEIE??IGEGB?FGGE?BSGHM?AA?ECG?FMFC?@E?BKBCKI@@ICAG@?CGA@IKRIFAC@GGACCKCO@CFC?EEBC@IMQ@GEMIICK@]CEA@AMQMA??C?@@?BC?BB??EIDKKMIIOUMGACBG?ICUMODWKGIMCGBIESEBAAA@BQCYSEHBGBCCc@B_@Q]EESAGCDCIFQCIGOFO?EGQPIAD@CBI@AGEC?HGDIAII?DEDECCFI?ECC?CEKBGI?COAMGKBCIIHOIAFG@?ECBACKFIEW@OCDBGVC?EDGA@A?BGBEAEPKGCNCABJIB_@?YJc@IQDWK?E?@BBGAHCG?@BA?",
+    "title": "Activity Title",
+    "seconds": 4467
+  },
+  "latestActivity": {
+    "activityId": 0,
+    "activityType": "Ride",
+    "date": "2019-08-23 22:29:27.0",
+    "meters": 16117.299804688,
+    "elevGainMeters": 0,
+    "polyline": "",
+    "title": "Activity Title",
+    "seconds": 2700
+  }
+}

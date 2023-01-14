@@ -1,0 +1,28 @@
+{
+    "totalTimeA": {
+        "en": "Time well-spent breaking a sweat.",
+        "es": "Tiempo bien empleado para sudar.",
+        "de": "Gut verbrachte Zeit, um ins Schwitzen zu kommen."
+    },
+    "totalTimeB": {
+        "en": "How you broke it down.",
+        "es": "Así es como lo desglosaste.",
+        "de": "So haben Sie es aufgeschlüsselt."
+    },
+    "elevationA": {
+        "en": {
+            "head": "Movin’ up in the world.",
+            "subhead": "That’s like climbing [X] Mt.Everests."
+        },
+        "es": "",
+        "de": ""
+    },
+    "elevationB": {
+        "en": {
+            "head": "RIP your quads.",
+            "subhead": "[X] [units] during [title]"
+        },
+        "es": "",
+        "de": ""
+    }
+}

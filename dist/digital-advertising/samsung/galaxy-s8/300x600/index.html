@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="invisible">
+			<div id="device" class="alpha-0">
+				<div id="screen">
+					<img src="screen.jpg">
+					<img src="long-exposure-lights.gif" id="photo_dark">
+					<div id="screen_cover"></div>
+				</div>
+				<img src="marker.png" id="marker" />
+				<img src="device-ui.png" id="device_ui">
+				<img src="device-ui-bars.png" id="device_ui_bars">
+				<img src="device.png" id="phone" />
+				<img src="camera_button.gif" id="camera_button" class="alpha-0">
+			</div>
+
+			<div id="headline" class="alpha-0">Take pro-quality<br>photos with<br>your phone.</div>
+			<div id="cta" class="alpha-0">
+				<div id="cta_up" class="sprite-svg cta-up"></div>
+				<div id="cta_over" class="sprite-svg cta-over alpha-0"></div>
+				<!-- CTA w text -->
+				<!-- <div id="cta_txt" class="cta-txt-white">SWITCH NOW</div> -->
+			</div>
+
+			<div id='legal' class="legal-text"></div>
+			<div id="logos" class="sprite-svg logos"></div>
+			<div id="branding" class="sprite-svg branding-white"></div>
+		</div>
+		<!--[if !IE]><!-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+			<script src="bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Strava - Year In Sport</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Matt Blackstone portfolio item: Strava 2019 Year In Sport">
+    <meta name="author" content="mattblackstone">
+    <meta property="og:image" content="http://mattblackstone.com/strava/strava-screens-perspective.png">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div>
+          <h1>Strava</h1>
+          <h2>2019 &ndash; Year In Sport</h2>
+        </div>
+      </header>
+      <div id="hero-img">
+        <div id="slideshow">
+          <div id="screens" class="sprite-mov"></div>
+        </div>
+      </div>
+      <section>
+        <div>
+          <h5>Overview</h5>
+          <article>
+            <h3>The Situation</h3>
+            <p>Strava is a social-fitness community of <a href="https://blog.strava.com/press/strava-releases-2019-year-in-sport-data-report/">millions</a> of athletes from hundreds of countries. Strava athletes range from casual to professional and some can be obsessed with their fitness data. Strava's Year In Sport is something athletes look forward to but is also a valuable recruiting tool via social media shares. The client wanted to avoid the shortcomings of a prior relationship: lack of control/ownership, difficulty with social sharing.</p>
+          </article>
+          <article>
+            <h3>The Plan</h3>
+            <p>Create a shareable, interactive experience inclusive of all types of athletes that wouldn't just highlight peak performances. Integrate the experience within the Strava site and collaborate with their developers to give Strava complete ownership.</p>
+          </article>
+          <article>
+            <h3>Prototyping</h3>
+            <p>The UI design was done in Figma along with some basic prototypes. The next step was to do more robust prototyping using vanilla JavaScript while decisions regarding the final tech stack were being made. I used the Greensock JS animation library (due to it's compatibility with JS frameworks) and sample JSON data to create prototypes. There was also some early discussion of using device motion sensors, so I handled that as well.<br><a href="strava-gyro-demo.mp4">View gyroscope prototype</a> | <a href="total-time">View data-vis prototype</a></p>
+          </article>
+          <article>
+            <h3>Final Build</h3>
+            <p>The experience was built in React using Contentful CMS. I was able to modify my prototypes to work in React and help other developers build the additional data visualizations. We collaborated closely with the Strava tech team to get the data we needed and to integrate the experience into the Strava site. More info and demo available by request.<br><a href="strava-yis-iphone8-demo.mp4">View screen recording</a></p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+
+</html>

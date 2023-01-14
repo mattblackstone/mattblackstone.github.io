@@ -1,0 +1,452 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none !important; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.transform-reset {
+  transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0); }
+
+@supports (-moz-appearance: meterbar) {
+  .gpu {
+    transform: translateZ(0) rotate(0.02deg); } }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Book.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-ExtraBold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+html,
+body {
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.container {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.cell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.primary {
+  -ms-flex: auto;
+      flex: auto; }
+
+#nav {
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px; }
+  #nav #header {
+    width: 100%;
+    height: 100%; }
+    #nav #header #nav_menu {
+      left: 20px; }
+    #nav #header #nav_gyro {
+      right: 60px; }
+    #nav #header #nav_share {
+      right: 20px; }
+    #nav #header .nav-icon {
+      position: absolute;
+      top: 12px;
+      width: 24px;
+      height: 24px; }
+  #nav #progress {
+    position: absolute;
+    background: #dfdfe8;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; }
+    #nav #progress #progress_mark {
+      background: #fc5200;
+      width: 7%;
+      height: 100%; }
+
+.disabled {
+  opacity: 0.25; }
+
+#permission {
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  #permission h3 {
+    margin: 0 0 12px;
+    color: white;
+    font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px; }
+  #permission .btn-permission {
+    margin: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: #fc5200;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
+
+#toggle_a, #toggle_b {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  cursor: pointer; }
+  #toggle_a .arrow, #toggle_b .arrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px; }
+
+#toggle_a {
+  top: 52px;
+  color: black;
+  background-color: #f0f0f5; }
+
+#toggle_b {
+  bottom: 0;
+  color: white;
+  background-color: black; }
+
+#main_content {
+  perspective: 500px;
+  background-color: #777; }
+
+#main_area {
+  box-sizing: border-box;
+  cursor: pointer; }
+
+.btn-next, .btn-prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: calc(50% + 26px);
+  transform: translate(0, -50%);
+  transition: all 250ms ease-in-out;
+  cursor: pointer; }
+
+.btn-prev {
+  left: 0; }
+  .btn-prev:hover {
+    transform: translate(-5px, -50%); }
+
+.btn-next {
+  right: 0; }
+  .btn-next:hover {
+    transform: translate(5px, -50%); }
+
+#main_content, #main_area, #permission {
+  position: absolute;
+  overflow: hidden;
+  top: 88px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 124px); }
+
+#parallax {
+  width: 100%;
+  height: 100%; }
+
+#mask_a, #mask_b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; }
+
+#mask_a {
+  background-color: #f0f0f5; }
+
+#mask_b {
+  background-color: black; }
+
+#content_a {
+  color: black;
+  background-color: #f0f0f5;
+  width: 100%;
+  height: 100%; }
+
+#content_b {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.top-half {
+  transform-origin: bottom; }
+
+.bottom-half {
+  transform-origin: top;
+  max-width: 540px; }
+
+#number, #number_a {
+  white-space: nowrap; }
+
+#elevation_text_a {
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 800;
+  color: #fc5200; }
+
+#elevation_units_a {
+  font-weight: 600; }
+
+#elevation_text {
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 800; }
+
+#elevation_units {
+  font-weight: 600;
+  color: #dfdfe8; }
+
+#head {
+  color: #dfdfe8; }
+
+#subhead {
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 800;
+  text-align: center; }
+
+#date {
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  color: #a4a4a4;
+  text-align: center; }
+
+.text-over {
+  width: 100%;
+  max-width: 540px; }
+
+#visual {
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  max-width: 540px; }
+  #visual svg .elev-line {
+    stroke: #fc5200;
+    stroke-linecap: butt;
+    stroke-width: 2px;
+    transform-origin: top; }
+  #visual svg .dot {
+    fill: #fc5200;
+    stroke: black; }
+
+@media (min-aspect-ratio: 7 / 8) {
+  .container {
+    -ms-flex-direction: row;
+        flex-direction: row; } }
+
+#test {
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.visual {
+  transform: scale(1.5); }
+
+.visual-a, .visual-a svg {
+  width: 385px;
+  height: 310px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.2em 5vw;
+  text-align: center; }
+
+h1 {
+  font-size: 100px;
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 800; }
+
+h2 {
+  font-size: 48px;
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 600; }
+
+h3 {
+  font-size: 36px;
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 600; }
+
+h4 {
+  font-size: 24px;
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 600; }
+
+h5 {
+  font-size: 18px;
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 600; }
+
+h6 {
+  font-size: 16px;
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 400; }
+
+@media (max-width: 414px), (max-height: 720px) {
+  .visual {
+    transform: scale(1); }
+  .visual-a, .visual-a svg {
+    width: 336.875px;
+    height: 271.25px; }
+  h1 {
+    font-size: 64px; } }
+
+@media (max-width: 375px), (max-height: 667px) {
+  .visual {
+    transform: scale(0.875); }
+  .visual-a, .visual-a svg {
+    width: 288.75px;
+    height: 232.5px; }
+  h1 {
+    font-size: 56px; }
+  h2 {
+    font-size: 42px; }
+  h3 {
+    font-size: 32px; }
+  h4 {
+    font-size: 21px; }
+  h5 {
+    font-size: 17px; }
+  h6 {
+    font-size: 15px; } }
+
+@media (max-width: 320px), (max-height: 568px) {
+  .visual {
+    transform: scale(0.667); }
+  .visual-a, .visual-a svg {
+    width: 256.795px;
+    height: 206.77px; }
+  h1 {
+    font-size: 48px; }
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 24px; }
+  h4 {
+    font-size: 18px; }
+  h5 {
+    font-size: 16px; }
+  h6 {
+    font-size: 14px; } }
+
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.arw-left {
+  background-position: 0 0;
+  width: 17px;
+  height: 25px; }
+.sprite-svg.arw-right {
+  background-position: 100% 0;
+  width: 17px;
+  height: 25px; }

@@ -1,0 +1,187 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.transform-reset {
+  transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0); }
+
+@supports (-moz-appearance: meterbar) {
+  .gpu {
+    transform: translateZ(0) rotate(0.02deg); } }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Book.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("/fonts/woff2/MaisonNeue-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Demi.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-Bold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url("/fonts/woff2/MaisonNeueExtended-ExtraBold.woff2") format("woff2"), url("/fonts/woff/MaisonNeueExtended-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+html,
+body {
+  font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.cell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.primary {
+  -ms-flex: 1;
+      flex: 1; }
+
+.secondary {
+  margin: 12px;
+  height: 30%; }
+
+@media (min-aspect-ratio: 1 / 1) {
+  .container {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .reverse {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+  .secondary {
+    height: auto;
+    width: 30%; } }
+
+@media (max-width: 360px), (max-height: 667px) {
+  .primary {
+    transform: scale(0.875); }
+  #title, #title_a, #title_b {
+    font-size: 32px; }
+  #sports {
+    font-size: 14px; } }
+
+@media (max-width: 320px), (max-height: 568px) {
+  .primary {
+    transform: scale(0.667); }
+  #title, #title_a, #title_b {
+    font-size: 24px; }
+  #sports {
+    font-size: 12px; } }
+
+#content_a {
+  color: black;
+  background-color: #f0f0f5; }
+  #content_a #visual_a {
+    width: 308px;
+    height: 346px;
+    margin: auto; }
+    #content_a #visual_a svg {
+      position: absolute;
+      transform: translateY(-19px); }
+    #content_a #visual_a #total_time {
+      position: absolute;
+      width: 308px;
+      height: 346px;
+      text-align: center; }
+      #content_a #visual_a #total_time #time_text {
+        position: absolute;
+        top: 140px;
+        width: 100%;
+        font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 1; }
+      #content_a #visual_a #total_time #time_units {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        font-size: 24px;
+        letter-spacing: 0.125em; }
+
+#title_a {
+  max-width: 336px;
+  font-size: 36px;
+  font-family: "MaisonNeueExtended", "Arial Black", sans-serif;
+  font-weight: 700; }

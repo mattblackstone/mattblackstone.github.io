@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>DA Overview</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <style>
+      html, body{
+        padding: 0px;
+        margin: 0px;
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-stretch: normal;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      h1{font-size: 2rem;}
+      h2{font-size: 1.5rem;}
+      h3{font-size: 1.125rem;}
+      p{font-size: 1rem;}
+      .header {
+        height: auto;
+        position: relative;
+        top: 0;
+        height: 100%;
+        margin: 0;
+        padding: 1.75rem;
+        background-color: transparent;
+        font-weight: 300;
+        line-height: 1.2rem;
+      }
+      .header svg{
+        top: 1px;
+        position: relative;
+      }
+      .showcase{
+        min-width: 500px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      ol, ul{font-size: 0.8125rem;}
+      ul{list-style: square inside;}
+      li {
+        line-height: 1.875rem;
+        text-align: left;
+      }
+      a {
+        color: #000;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 0.8125rem;
+        letter-spacing: 0.0575em;
+        display: inline-block;
+      }
+      a:hover{
+        color: #e51837;
+        background-color: #e0e0e0;
+      }
+      .none {display: none;}
+      .faded {opacity: 0.25;}
+      .list-view {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .list-view a {
+        width: 94%;
+        /* text-indent: 0.625rem; */
+        word-break: keep-all;
+      }
+      #view_toggle {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+      #grid_icon, #list_icon {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+      }
+      #grid_icon {right: 40px;}
+      #list_icon {right: 0;}
+      #preview_box{
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 0;
+        left: 0;
+        top: 0;
+      }
+      #image{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+      .thumb {
+        color: #000;
+        text-align: center;
+        font-size: 0.8125rem;
+        letter-spacing: 0.0575em;
+        line-height: 1.5rem;
+        min-width: 120px;
+        display: inline-block;
+      }
+      .thumb .pic{
+        width: 120px;
+        height: 120px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .thumb img{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+      }
+      a:hover div{
+        color: #e51837;
+      }
+      .grid-view {
+        display: flex;
+        justify-content: space-between;
+      }
+      .grid-view span {
+        font-size: 1rem;
+        margin-left: 1.5em;
+      }
+      .grid-view span a, p a {
+        font-size: 1rem;
+        text-decoration: underline;
+      }
+      @media only screen and (max-width: 480px){
+        h1{font-size: 1.5rem;}
+        h2{font-size: 1.125rem;}
+        h3{font-size: 0.875rem;}
+        p{font-size: 0.85rem;}
+        .header{padding-left: 10px;}
+        .labelMobile{display: none;}
+        .list-view a {
+          width: 90%;
+        }
+        li{
+          font-weight: 400;
+          font-size: 0.75rem;
+          line-height: 2.25rem;
+        }
+        .grid-view span, .grid-view span a, p a {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="showcase none">
+      <!-- <div id="view_toggle">
+        <div id="grid_icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><path d="M0 0h10v10H0V0zm15 0h10v10H15V0zM0 15h10v10H0V15zm15 0h10v10H15V15z" fill-rule="evenodd"/></svg></div>
+        <div id="list_icon" class="faded"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><path d="M0 0h25v5H0V0zm0 10h25v5H0v-5zm0 10h25v5H0v-5z" fill-rule="evenodd"/></svg></div>
+      </div> -->
+      <h1 style="margin: 0; padding-bottom: 0.67em; border-bottom: 1px solid black;">Digital Advertising Overview</h1>
+      <h2>Animation</h2>
+      <h3>Flash (R.I.P.)</h3>
+      <div class="grid-view">
+        <a href="flash-animation/nike-sport-watch/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="60" height="50" src="flash-animation/nike-sport-watch/backup.jpg">
+            </div>
+            <div>nike-sport-watch</div>
+          </div>
+        </a>
+        <span>Creating animated banner ads used to be much simpler. Flash was a fully featured IDE that compiled small binary files that looked and behaved the same across nearly all browsers. Ads during the Flash era were 40k. Now they are 150k to 250k. Developing ads in HTML is much more complicated and time consuming, but developers are no longer dependent on a single platform.</span>
+      </div>
+      <h3>CSS 3D</h3>
+      <div class="grid-view">
+        <a href="samsung/galaxy-fold/kv-fold/300x600/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="60" height="120" src="samsung/galaxy-fold/kv-fold/300x600/backup.jpg">
+            </div>
+            <div>galaxy-fold</div>
+          </div>
+        </a>
+        <span>All modern browsers have basic support CSS 3D. It's a bit convoluted to use, but has a tiny footprint compared to more robust Javascript 3D libraries. Although not true 3D, a lot can be acheived through careful perspective transformations of 2D elements.<br><a href="samsung/galaxy-fold/kv-fold/300x600/assets.html">View assets</a></span>
+      </div>
+      <h3>HTML Canvas</h3>
+      <div class="grid-view">
+        <a href="samsung/galaxy-s10/gamers/970x250/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="194" height="50" src="samsung/galaxy-s10/gamers/970x250/backup.jpg">
+            </div>
+            <div>galaxy-s10-fortnite</div>
+          </div>
+        </a>
+        <span>HTML5 introduced the Canvas element which is meant for direct pixel manipulation using Photoshop-like effects. A canvas can have a 2D or 3D drawing context. Animation can be acheived by drawing new images to the canvas several times per-second. This example uses a Javascript loop to draw particles to the canvas at a rate of 30fps.<br><a href="samsung/galaxy-s10/gamers/970x250/assets.html">View assets</a></span>
+      </div>
+      <h3>Sprite Animation</h3>
+      <div class="grid-view">
+        <a href="samsung/galaxy-s6/butterfly/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="60" height="120" src="samsung/galaxy-s6/butterfly/backup.jpg">
+            </div>
+            <div>gs6-butterfly</div>
+          </div>
+        </a>
+        <span>Sprite is a generic term for a small bitmap image (usually one of many images stitched together into one large image for better performance). This example uses image sequences stiched together into long strips that give the illusion of motion like a film strip. This setup provides granular control for playing animations forward or in reverse or dynamically changing the frames per-second.<br><a href="samsung/galaxy-s6/butterfly/assets.html">View assets</a></span>
+      </div>
+      <h3>Animated GIF</h3>
+      <div class="grid-view">
+        <a href="samsung/galaxy-s8/970x250/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="194" height="50" src="samsung/galaxy-s8/970x250/backup.jpg">
+            </div>
+            <div>galaxy-s8-camera</div>
+          </div>
+        </a>
+        <span>Sometimes using an animated GIF is still the best way to get the job done. There are many drawbacks to using animated GIFs. They're huge in file size; you can't control or monitor their playback; they only support 8-bit hard transparency and so on. However, if you're really careful, they can still be useful.<br><a href="samsung/galaxy-s8/970x250/assets.html">View assets</a></span>
+      </div>
+      <h3>After Effects &#43; Lottie</h3>
+      <div class="grid-view">
+        <a href="samsung/ugtg/screen/970x250/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="194" height="50" src="samsung/ugtg/screen/970x250/backup.png">
+            </div>
+            <div>upgrade-to-galaxy</div>
+          </div>
+        </a>
+        <span><a href="https://airbnb.io/lottie/">Lottie</a> is only a few years old but is gaining in popularity. After installing a plugin called <a href="https://aescripts.com/bodymovin/">Bodymovin</a> in After Effects, animations can be output to a JSON format which can be played back natively on mobile and in a browser using the <a href="https://cdnjs.com/libraries/bodymovin">Lottie JS library</a>. Even though Lottie only supports a subset of After Effects features (works best with vector content, no Expressions or fancy effects), it allows for very high quality animations that compress very well. Lottie animations also allow playback control and dispatch events.</span>
+      </div>
+      <div style="width: 50px; height: 25px;"></div>
+      <h2>Rich Media &#47; Programmatic</h2>
+      <h3>NYTimes Video Masthead</h3>
+      <div class="grid-view">
+        <a href="samsung/galaxy-fold/masthead-features/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="194" height="50" src="samsung/galaxy-fold/masthead-features/backup.jpg">
+            </div>
+            <div>nyt-masthead</div>
+          </div>
+        </a>
+        <span>Ads containing video must be run on a rich media platform such as Google's DoubleClick Studio. This ad features a 'draggable' video that spawns smaller videos based on user interaction.</span>
+      </div>
+      <h3>Mercedes - Build Your Own</h3>
+      <div class="grid-view">
+        <a href="https://creativepreview.flashtalking.net/pv/SyASd9TSG" target="_blank">
+          <div class="thumb">
+            <div class="pic">
+              <img width="120" height="120" src="mercedes/mbusa-byo-dynamic-ft/backup.png">
+            </div>
+            <div>mbusa-byo</div>
+          </div>
+        </a>
+        <span>Dynamic Personalization At Scale: Visitors to the site experience are later retargeted in display channels with dynamic Mercedes-Benz ad content that features an exact, digital replica of the vehicle that they configured on site, including the visitor’s choice of class, model, exterior options and wheels. Using a custom developed solution, new vehicle configurations are pulled dynamically from the MBUSA media server at impression time, and cached at the dynamic ad server for any future requests.<br><a href="https://docs.google.com/presentation/d/1J-6G6n-cW3sfwIjAzYUyWTf-omYpsdRMiBi_HJLHjoc" target="_blank">View case study</a></span>
+      </div>
+      <h3>Disney Parks &amp; Resorts</h3>
+      <div class="grid-view">
+        <a href="https://creativepreview.flashtalking.net/pv/XIZwT04Mp" target="_blank">
+          <div class="thumb">
+            <div class="pic">
+              <img width="120" height="120" src="disney/resorts-sca/backup.png">
+            </div>
+            <div>cart-abandoners</div>
+          </div>
+        </a>
+        <span>The Shopping Cart Abandoners (SCA) project for Disney Parks &amp; Resorts was a great example of a programmatic campaign done right. The data mostly came from Disney owned properties and was used to help facilitate planning a Disney vacation. The display ad part of the campaign was run through the rich media platform Flashtalking. Flashtalking specializes in ads that use dynamic content (text, images, video, data etc). These ads needed to accomodate many different layouts and scenarios. In this type of setup, one ad template has to do everything (like a Swiss Army Knife).<br><a href="https://docs.google.com/presentation/d/1o1xQLro5iV-As3v1ehPKAeMUHey4iU-CwX5bnfCLJtE" target="_blank">View case study</a></span>
+      </div>
+      <h3>Mailchimp</h3>
+      <div class="grid-view">
+        <a href="mailchimp/wave2/index.html">
+          <div class="thumb">
+            <div class="pic">
+              <img width="120" height="120" src="mailchimp/wave2/backup.png">
+            </div>
+            <div>wave2</div>
+          </div>
+        </a>
+        <span>If a dynamic ad is like a Swiss Army Knife, these ads are like the individual tools. Our client challenged us to build a programmatic campaign without using a rich media platform. Instead of using a dynamic ad setup to create hundreds of versions we created local automations to generate hundreds of ads with static content that could be run as inexpensive standard ads. Rich media platforms such as Flashtalking and DoubleClick Studio help facilitate programmatic audience targeting, but are not required.<br><a href="https://docs.google.com/spreadsheets/d/1AKOsqM58_MjjNIPhEL8XkTrWbfhSbxRuF4oxeQdisj4" target="_blank">View versioning sheet</a></span>
+      </div>
+      <div style="width: 50px; height: 25px;"></div>
+      <h2>Resources</h2>
+      <!-- <p><a href="https://docs.google.com/presentation/d/14q2sMUxESuP8d_YPxyz77Fl7zr2Ou5hvhMLKRFdKggk" target="_blank">Digital Advertising deck</a></p> -->
+      <!-- <p><a href="https://docs.google.com/presentation/d/1GvCtb0B5jwggB1eq48-n5Z1VGk1wKjTrezfmm34GDKE" target="_blank">Programmatic Creativity deck</a></p> -->
+      <!-- <p><a href="Programmatic_Creativity.mp4">Programmatic Creativity video</a></p> -->
+      <p><a href="more.html">More ad examples</a></p>
+    </div>
+    <div id="preview_box">
+      <div id="image"></div>
+    </div>
+  </body>
+  <script>
+    var backupURL = '';
+    var showcase = document.querySelector('.showcase');
+    var previewBox = document.getElementById('preview_box');
+    var image = document.getElementById('image');
+    var listItems = document.querySelectorAll('li');
+    var i = listItems.length;
+    var btnGrid = document.getElementById('grid_icon');
+    var btnList = document.getElementById('list_icon');
+    var elemsGrid = document.querySelectorAll('.grid-view');
+    var elemsList = document.querySelectorAll('.list-view');
+    var currentView = 'grid';
+    var imgSize = '160x600';
+    var imgW = 160;
+    var imgH = 600;
+
+    function updateHash(anchor){
+      var hash = (/^#/.test(anchor)) ? anchor : '#' + anchor;
+      (history.pushState) ? history.pushState(null, null, hash) : location.hash = hash;
+    }
+
+    function updateView(type){
+      type = type.replace(/^#/, '');
+      if((type === 'grid' || type === 'list') && currentView !== type){
+        btnGrid.classList.toggle('faded');
+        btnList.classList.toggle('faded');
+        var l = elemsGrid.length;
+        while(l--) {
+          elemsGrid[l].classList.toggle('none');
+          elemsList[l].classList.toggle('none');
+        }
+        currentView = type;
+        updateHash(currentView);
+      }
+      showcase.classList.remove('none');
+    }
+
+    // btnGrid.addEventListener('click', function(){
+    //   updateView('grid');
+    // });
+    //
+    // btnList.addEventListener('click', function(){
+    //   updateView('list');
+    // });
+
+    document.addEventListener('mousemove', function(e){
+      var thumbWidth = imgW * 0.3333;
+      var thumbHeight = imgH * 0.3333;
+      var pad = 10;
+      scrollbar = 16;
+      var translateX = (e.clientX + thumbWidth + pad + scrollbar < window.innerWidth) ? e.pageX + pad : e.pageX - pad - thumbWidth;
+      var translateY = (e.clientY + thumbHeight + pad + scrollbar < window.innerHeight) ? e.pageY + pad : e.pageY - pad - thumbHeight;
+      previewBox.style.transform = 'translate(' + translateX + 'px, ' + translateY + 'px';
+    });
+
+    while(i--){
+      listItems[i].addEventListener('mouseover', function(e){
+        backupURL = e.target.dataset.backup; // dataset: ie11+
+        imgW = e.target.dataset.width;
+        imgH = e.target.dataset.height;
+        if(backupURL){
+          previewBox.style.display = 'inline';
+          image.style.width = Math.round(imgW * 0.3333) + 'px';
+          image.style.height = Math.round(imgH * 0.3333) + 'px';
+          image.style.backgroundImage = 'url(' + backupURL + ')';
+        }
+      });
+      listItems[i].addEventListener('mouseout', function(){
+        backupURL = '';
+        previewBox.style.display = 'none';
+        image.style.backgroundImage = 'url()';
+      });
+    }
+    window.onload = function(){
+      updateView(window.location.hash);
+    };
+  </script>
+</html>

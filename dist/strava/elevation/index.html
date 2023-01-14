@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Elevation</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <div id="nav">
+      <div id="header">
+        <div id="nav_menu" class="nav-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5H21V6H3V5ZM3 11H21V12H3V11ZM21 17H3V18H21V17Z" fill="#FC5200" />
+          </svg>
+
+        </div>
+        <div id="nav_gyro" class="nav-icon none">
+          <svg height="25" viewBox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" stroke="#000">
+              <circle cx="12.5" cy="12.5" r="12" />
+              <circle cx="12.5" cy="12.5" r="1" />
+              <path d="m306.5 83.5c2.209 0 4 4.477 4 10s-1.791 10-4 10-4-4.477-4-10 1.791-10 4-10z" transform="translate(-294 -81)" />
+              <path d="m306.5 89.5c5.523 0 10 1.791 10 4s-4.477 4-10 4-10-1.791-10-4 4.477-4 10-4z" transform="translate(-294 -81)" />
+              <circle cx="23" cy="2" r="1.5" />
+              <circle cx="2" cy="23" r="1.5" />
+            </g>
+          </svg>
+        </div>
+        <div id="nav_share" class="nav-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 15.9998C17.0802 16.0058 16.2141 16.4333 15.65 17.1598L7.82997 12.9998C8.05729 12.3834 8.05729 11.7061 7.82997 11.0898L15.65 6.87977C16.5589 8.02514 18.1612 8.34839 19.4431 7.64501C20.725 6.94164 21.313 5.41655 20.8352 4.03462C20.3575 2.6527 18.953 1.81653 17.5104 2.05513C16.0678 2.29373 15.0074 3.5376 15 4.99977C14.9995 5.34034 15.057 5.67851 15.17 5.99977L7.34997 10.1598C6.56508 9.14461 5.22144 8.74106 4.0071 9.15576C2.79276 9.57045 1.97662 10.7116 1.97662 11.9948C1.97662 13.278 2.79276 14.4191 4.0071 14.8338C5.22144 15.2485 6.56508 14.8449 7.34997 13.8298L15.17 17.9998C15.057 18.321 14.9995 18.6592 15 18.9998C15 20.6566 16.3431 21.9998 18 21.9998C19.6568 21.9998 21 20.6566 21 18.9998C21 17.3429 19.6568 15.9998 18 15.9998ZM18 2.99977C19.1045 2.99977 20 3.8952 20 4.99977C20 6.10434 19.1045 6.99977 18 6.99977C16.8954 6.99977 16 6.10434 16 4.99977C16 3.8952 16.8954 2.99977 18 2.99977ZM4.99997 13.9998C3.8954 13.9998 2.99997 13.1043 2.99997 11.9998C2.99997 10.8952 3.8954 9.99977 4.99997 9.99977C6.10454 9.99977 6.99997 10.8952 6.99997 11.9998C6.99997 13.1043 6.10454 13.9998 4.99997 13.9998ZM18 20.9998C16.8954 20.9998 16 20.1043 16 18.9998C16 17.8952 16.8954 16.9998 18 16.9998C19.1045 16.9998 20 17.8952 20 18.9998C20 20.1043 19.1045 20.9998 18 20.9998Z" fill="#6D6D78" />
+          </svg>
+
+        </div>
+      </div>
+      <div id="progress">
+        <div id="progress_mark"></div>
+      </div>
+    </div>
+    <div id="toggle_a">
+      <div class="arrow"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.48599 0.248081C1.61787 0.24996 1.74367 0.303874 1.83599 0.398081L7.98598 6.53808L14.136 0.398082C14.2628 0.271253 14.4477 0.22172 14.6209 0.268143C14.7942 0.314566 14.9295 0.449891 14.9759 0.623143C15.0223 0.796395 14.9728 0.981253 14.846 1.10808L8.34598 7.60808C8.2521 7.70274 8.1243 7.75598 7.99098 7.75598C7.85767 7.75598 7.72987 7.70274 7.63598 7.60808L1.13599 1.10808C0.995926 0.965231 0.954498 0.752645 1.03067 0.567657C1.10684 0.382668 1.28595 0.260891 1.48599 0.258081L1.48599 0.248081Z" fill="#494950" />
+        </svg>
+      </div>
+      TOTAL ELEVATION GAIN
+    </div>
+    <div id="toggle_b">
+      <div class="arrow"><svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8.50009C14.3681 8.49821 14.2423 8.44429 14.15 8.35009L7.99998 2.21009L1.84998 8.35009C1.72315 8.47692 1.53829 8.52645 1.36504 8.48003C1.19179 8.4336 1.05646 8.29828 1.01004 8.12503C0.963615 7.95177 1.01315 7.76692 1.13998 7.64009L7.63998 1.14009C7.73386 1.04543 7.86166 0.992188 7.99498 0.992188C8.1283 0.992188 8.25609 1.04543 8.34998 1.14009L14.85 7.64009C14.99 7.78294 15.0315 7.99552 14.9553 8.18051C14.8791 8.3655 14.7 8.48728 14.5 8.49009V8.50009Z" fill="white" />
+        </svg>
+      </div>
+      HILLIEST DAY
+    </div>
+    <div id="main_content" class="invisible">
+      <div id="parallax">
+        <div id="mask_a">
+          <div id="content_a" class="container">
+            <!-- <div class="top-half"> -->
+            <div class="visual-a">
+              <svg id="mountain" xmlns="http://www.w3.org/2000/svg" width="385" height="310" viewBox="0 0 385 310">
+                <style type="text/css">
+                  .st0 {
+                    fill: #FC5200;
+                  }
+
+                  .st1 {
+                    fill: #FFFFFF;
+                  }
+
+                  .st2 {
+                    fill: #DFDFE8;
+                  }
+
+                  .st3 {
+                    fill: #A4A4A4;
+                  }
+
+                  .st4 {
+                    fill: #6D6D78;
+                  }
+                </style>
+                <path class="st0" d="M189.6,33.2l-12.5,7.2V26L189.6,33.2z" />
+                <path class="st1" d="M106,137.4v25.1l25.9,30.5l37.1-3l37,14.5l37.8-20.3L177.1,40.4L157,52.2l-20.1,52.1L106,137.4z" />
+                <path class="st2" d="M106,137.4v25.1l25.9,30.5l10.2-55.7l14.9-85l-20.2,52.1L106,137.4z" />
+                <path class="st3" d="M53,245L0,310h385L244,184.2l-54.2-46.9L157,176.5l-14.8-39.1L106,162.5l-37.1,26.9L53,245z" />
+                <path class="st4" d="M53,245l-13.1,51.5l74.2-51.5l22.6-30.7l5.4-77L106,162.5l-37.1,26.9L53,245z" />
+                <path class="st4" d="M53,244.9L0,310h187.4l-73.3-65.1l-35.3-32.8L53,244.9z" />
+              </svg>
+
+            </div>
+            <!-- </div> -->
+            <div class="bottom-half">
+              <h1 id="number_a">
+                <span id="elevation_text_a"></span><span id="elevation_units_a"></span>
+              </h1>
+              <h2 id="head_a"></h2>
+              <h4 id="subhead_a"></h4>
+            </div>
+          </div>
+        </div>
+        <div id="mask_b">
+          <div id="content_b" class="container">
+            <div class="text-over top-half">
+              <h1 id="number">
+                <span id="elevation_text"></span><span id="elevation_units"></span>
+              </h1>
+              <h2 id="head"></h2>
+              <h4 id="subhead"></h4>
+              <h5 id="date"></h5>
+            </div>
+            <div id="visual" class="bottom-half">
+              <svg id="elevation_profile" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main_area"></div>
+    <div id="permission" class="none">
+      <div>
+        <h3>Allow gyroscope access?</h3>
+        <button id="allow" class="btn-permission">Allow</button>
+        <button id="deny" class="btn-permission">Deny</button>
+      </div>
+    </div>
+    <a href="../total-time" onclick="location.href=this.href+window.location.hash;return false;">
+      <div class="btn-prev">
+        <div class="sprite-svg arw-left"></div>
+      </div>
+    </a>
+    <pre id="test"></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+
+</html>
